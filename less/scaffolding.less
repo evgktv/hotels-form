@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Tahoma;
+    src: url("../fonts/Tahoma.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Tahoma;
+    src: url("../fonts/Tahoma-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    font-style: normal;
+
+    background-color: #fff;
+
+    @media @desktop-widths {
+        margin: 0 auto;
+        width: 1025px;
+        box-shadow: 0 0 10px 5px #9d9d9d;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.wrapper {
+
+    @media @desktop-widths {
+        width: 852px;
+        margin: 0 auto;
+    }
+
+    &--content {
+        width: 90%;
+        margin: 0 auto;
+
+    }
+}
+
+.main__wrapper {
+    .container-fluid();
+}

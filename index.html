@@ -1,0 +1,216 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hotels-form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+<body>
+<header class="header">
+  <div class="wrapper">
+    <h1 class="visually-hidden">Ticket Form</h1>
+
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--active">
+          <a>Search tickets</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Sapsan</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Allegro</a>
+        </li>
+
+        <li class="main-nav__item main-nav__item--parent-sub">
+          <a href="#">Trans-Seberian</a>
+
+          <ul class="main-nav__submenu">
+            <li class="main-nav__item main-nav__item--submenu">
+              <a href="#">Trans-Seberian-1</a>
+            </li>
+            <li class="main-nav__item main-nav__item--submenu">
+              <a href="#">Trans-Seberian-2</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="main-nav__item main-nav__item--parent-sub">
+          <a href="#">FAQ</a>
+
+          <ul class="main-nav__submenu">
+            <li class="main-nav__item main-nav__item--submenu">
+              <a href="#">FAQ-1</a>
+            </li>
+            <li class="main-nav__item main-nav__item--submenu">
+              <a href="#">FAQ-2</a>
+            </li>
+            <li class="main-nav__item main-nav__item--submenu">
+              <a href="#">FAQ-3</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="main-nav__item main-nav__item--parent-sub">
+          <a href="#">Tickets guide</a>
+
+          <ul class="main-nav__submenu">
+            <li class="main-nav__item main-nav__item--submenu">
+              <a href="#">Group travel</a>
+            </li>
+            <li class="main-nav__item main-nav__item--submenu">
+              <a href="#">Ticket types</a>
+            </li>
+            <li class="main-nav__item main-nav__item--submenu">
+              <a href="#">Child policy</a>
+            </li>
+            <li class="main-nav__item main-nav__item--submenu">
+              <a href="#">Change ticket request</a>
+            </li>
+            <li class="main-nav__item main-nav__item--submenu">
+              <a href="#">Cancel tickets</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="main-nav__item main-nav__item--parent-sub">
+          <a href="#">Contact us</a>
+
+          <ul class="main-nav__submenu main-nav__submenu--contact">
+            <li class="main-nav__item main-nav__item--submenu">
+              <a href="#">Contact us-1</a>
+            </li>
+            <li class="main-nav__item main-nav__item--submenu">
+              <a href="#">Contact us-2</a>
+            </li>
+            <li class="main-nav__item main-nav__item--submenu">
+              <a href="#">Contact us-3</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="main-nav__login">
+        <a href="#" class="main-nav__item main-nav__login-user">
+          <svg class="main-nav__login-icon" width="11.7" height="15" fill="#fff">
+            <use xlink:href="/img/symbols.svg#icon-login"></use>
+          </svg>
+          Sign in
+        </a>
+      </div>
+    </nav>
+  </div>
+
+</header>
+
+<main class="content">
+  <div class="wrapper wrapper--content">
+    <h1 class="content__title">Russian Train Tickets</h1>
+
+    <form class="content__form" method="post" action="#">
+
+      <div class="content__form-city-block">
+
+        <div class="content__form-city content__form-city--departure">
+          <label class="content__box-lable" for="departure">
+            <p class="content__box-title">Departure city:</p>
+          </label>
+          <input class="content__form-box content__form-box--city content__form-box--city-departure" type="text" name="departure" id="departure" placeholder="Type city name" required>
+          <div class="content__form-city-exercise">
+            <span class="content__form-city-exercise">Ex:
+              <span class="content__form-city-exercise content__form-city-exercise--city">St. Petersburg</span>
+              <span class="content__form-city-exercise content__form-city-exercise--city">Moscow</span>
+            </span>
+          </div>
+        </div>
+
+        <svg class="content__icon-swap" width="29.812" height="15.906" fill="#fff">
+          <use xlink:href="/img/symbols.svg#icon-swap"></use>
+        </svg>
+
+        <div class="content__form-city content__form-city--arrival">
+          <label class="content__box-lable" for="arrival">
+            <p class="content__box-title">Arrival city:</p>
+          </label>
+          <input class="content__form-box content__form-box--city content__form-box--city-arrival" type="text" name="arrival" id="arrival" placeholder="Type city name" required>
+          <div class="content__form-city-exercise">
+            <span class="content__form-city-exercise">Ex:
+              <span class="content__form-city-exercise content__form-city-exercise--city">St. Petersburg</span>
+              <span class="content__form-city-exercise content__form-city-exercise--city">Moscow</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__form-date-block">
+
+        <div class="content__form-date content__form-date--departure">
+          <label class="content__box-lable" for="departure-date">
+            <p class="content__box-title">Departure date:</p>
+          </label>
+          <input class="content__form-box content__form-box--date" type="text" name="departure-date" id="departure-date" placeholder="dd.mm.yyyy" required>
+
+          <svg class="content__form-calendar" width="26" height="26">
+            <use xlink:href="/img/symbols.svg#icon-calendar"></use>
+          </svg>
+        </div>
+
+
+        <div class="content__form-date content__form-date--return">
+          <label class="content__box-lable" for="return-date">
+            <p class="content__box-title">Return date:</p>
+          </label>
+
+          <div class="content__form-box-roundtrip">
+            <input class="content__form-box content__form-box--date content__form-box--date-return content__form-box--disable" type="text" name="return-date" id="return-date" placeholder="dd.mm.yyyy" disabled>
+            <svg class="content__form-calendar content__form-calendar--return content__form-box--disable" width="26" height="26">
+              <use xlink:href="/img/symbols.svg#icon-calendar"></use>
+            </svg>
+          </div>
+        </div>
+
+        <label class="content__form-label-roundtrip">
+          <input class="content__form-roundtrip" name="roundtrip" id="roundtrip" type="checkbox">
+          <span class="content__form-roundtrip-custom"></span>
+          <span class="content__form-roundtrip-text">Roundtrip</span>
+        </label>
+
+      </div>
+
+      <div class="content__form-currency-block">
+
+        <div class="content__form-city content__form-currency">
+          <p class="content__box-title">Currency:</p>
+          <div class="content__form-currency-box">
+            <span class="content__form-currency-checked">RUB</span>
+
+            <span class="content__form-currency-button"></span>
+
+            <ul class="content__form-currency-list">
+              <li class="content__form-currency-item">USD</li>
+              <li class="content__form-currency-item">RUB</li>
+              <li class="content__form-currency-item">GBR</li>
+              <li class="content__form-currency-item">EUR</li>
+              <li class="content__form-currency-item">CHF</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__form-button-block">
+        <button class="content__form-button" type="submit" >Search</button>
+      </div>
+
+    </form>
+
+  </div>
+</main>
+
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
