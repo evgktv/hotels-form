@@ -497,6 +497,7 @@ template {
   text-decoration: none;
   outline: none;
   opacity: 0.5;
+  cursor: url("../img/hand-pointer.cur"), pointer;
 }
 .main-nav__login-user.main-nav__item:hover {
   opacity: 1;
@@ -885,6 +886,12 @@ template {
 .content__form-button:focus {
   outline: none;
 }
+.content__form-button-icon {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
 @media (min-width: 768px) {
   .main__wrapper {
     width: 88%;
@@ -894,6 +901,7 @@ template {
     display: none;
   }
   .main-nav__login {
+    margin-left: 0;
     position: absolute;
     width: 90px;
     left: 0;
@@ -919,7 +927,7 @@ template {
     display: none;
   }
   .main-nav__item a {
-    padding: 11px 10px;
+    padding: 11px 9px;
   }
   .main-nav__item:hover .main-nav__item--submenu {
     margin: 0;
